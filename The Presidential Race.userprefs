@@ -2,10 +2,10 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\KartMovement.cs">
     <Files>
-      <File FileName="..\aMAZEing game 2 Electric Boogaloo\Assets\Scripts\PlayerController.cs" Line="20" Column="17" />
+      <File FileName="Assets\Scripts\KartMovement.cs" Line="50" Column="13" />
+      <File FileName="..\aMAZEing game 2 Electric Boogaloo\Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
       <File FileName="..\aMAZEing game 2 Electric Boogaloo\Assets\Scripts\PlayerMovement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="27" Column="21" />
-      <File FileName="Assets\Scripts\KartMovement.cs" Line="43" Column="20" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
