@@ -13,9 +13,12 @@ public class KartMovement : MonoBehaviour {
 
 	private Rigidbody rb;
 
+	public GameObject targetWaypoint;
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody> ();
+		UpdateWaypoint (targetWaypoint);
 	}
 
 	// Update is called once per frame
@@ -72,7 +75,7 @@ public class KartMovement : MonoBehaviour {
 		rb.velocity = velocity;
 
 		// How fast are we going?
-		print (velocity);
+		//print (velocity);
 		//this.velocity = velocity * inputMask;
 	}
 
@@ -91,20 +94,10 @@ public class KartMovement : MonoBehaviour {
 		//transform.rotation.eulerAngles.y += xInput * turnRate * rb.velocity.magnitude;
 	}
 
-	/*public void Rotate(Vector3 rotation)
-	{
-		this.rotation = rotation * inputMask;
-	}*/
-
-	void FixedUpdate() {
-		//rb.MovePosition (rb.position + velocity * Time.fixedDeltaTime);
-		//Vector3 localRotation = new Vector3 (rotation.x, 0, 0);
-		//Vector3 globalRotation = new Vector3 (0, rotation.y, 0);
-		/*rb.MoveRotation (rb.rotation * Quaternion.Euler (rotation));
-
-		if (inputMask > 0 && rb.position.y < 0) {
-			inputMask = 0f;
-			userInterf.Win ();
-		}*/
+	public void UpdateWaypoint(GameObject nextWaypoint) {
+		targetWaypoint = nextWaypoint;
+		AIScript compScript = GetComponent<AIScript> ();
+		if (compScript != null)
+			compScript.SetTarget (targetWaypoint.GetComponent<WaypointScript> ().GetPoint ());
 	}
 }
