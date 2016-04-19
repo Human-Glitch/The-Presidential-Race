@@ -7,6 +7,8 @@ Project("{C293FDF6-130F-A037-BE18-B4ED06EE9A74}") = "Presidential Race", "Assemb
 EndProject
 Project("{C293FDF6-130F-A037-BE18-B4ED06EE9A74}") = "Presidential Race", "Assembly-CSharp-Editor.csproj", "{E4F4B808-0E7B-9A11-B50A-98BCBF882134}"
 EndProject
+Project("{C293FDF6-130F-A037-BE18-B4ED06EE9A74}") = "Presidential Race", "Assembly-UnityScript-Editor.unityproj", "{1546CC67-8B3B-A967-A26C-23FE98E8C611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{E4F4B808-0E7B-9A11-B50A-98BCBF882134}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4F4B808-0E7B-9A11-B50A-98BCBF882134}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4F4B808-0E7B-9A11-B50A-98BCBF882134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1546CC67-8B3B-A967-A26C-23FE98E8C611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1546CC67-8B3B-A967-A26C-23FE98E8C611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1546CC67-8B3B-A967-A26C-23FE98E8C611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1546CC67-8B3B-A967-A26C-23FE98E8C611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
