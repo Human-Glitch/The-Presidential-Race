@@ -1,0 +1,20 @@
+
+Title Screen
+	Title Logo: http://cooltext.com/Render-Image?RenderID=178202317410096&LogoId=1782024306
+
+	title screen background: https://underdesign.files.wordpress.com/2010/03/presidential_desktop.jpg
+
+				http://ztona.info/wp-content/uploads/2015/11/presidential-suite-the-white-house.jpg
+
+				limo: http://www.whatdafuh.com/wp-content/uploads/2015/05/president-obamas-limousine_100350544_l.jpg
+
+				rr car: http://img1.goodfon.su/original/1280x1024/d/29/ronald-reagan-ford-mustang.jpg
+
+	music: https://www.youtube.com/watch?v=q_ZKO-9aP44
+
+	white circle button: http://dabuttonfactory.com/#t=OK&f=Calibri-Bold&ts=28&tc=f5f5f5&w=50&h=50&c=round&bgt=unicolored&bgc=351c75&bs=2&bc=f5f5f5&shs=1&shc=999&sho=s
+
+	Presidential Seal: https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Seal_of_the_President_of_the_United_States.svg/2000px-Seal_of_the_President_of_the_United_States.svg.png
+
+Credits Screen
+	credit background: 
