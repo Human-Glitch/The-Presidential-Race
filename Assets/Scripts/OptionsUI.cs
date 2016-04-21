@@ -3,8 +3,10 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class CreditUI : MonoBehaviour {
+public class OptionsUI : MonoBehaviour {
 	public Button back;
+	public Toggle mute;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -16,10 +18,19 @@ public class CreditUI : MonoBehaviour {
 	}
 
 	public void Back(){
-		//Load Title Screen
-		//print ("Back");
+		//Load the title screen
 		SceneManager.LoadScene("Title");
+	}
 
-	
+	public void Mute(){
+		//Mute the music
+
+		if (mute.isOn) {
+			print ("Muted");
+		}
+
+		if (!mute.isOn) {
+			print ("Playing");
+		}
 	}
 }

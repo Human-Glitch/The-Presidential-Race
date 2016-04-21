@@ -23,19 +23,21 @@ public class TitleUI : MonoBehaviour {
 	}
 
 	public void Credits(){
-		print ("Credits");
+		//print ("Credits");
 		//load credit scene
 		SceneManager.LoadScene("Credits");	
 	}
 
 	public void Options(){
-		print ("Options");
+		//print ("Options");
 		// display options
+		SceneManager.LoadScene("Options");
 	}
 
 	public void Quit(){
-		print ("Quit");
+		//print ("Quit");
 		// quit the application
+		SceneManager.LoadScene("Quit");
 	}
 		
 }

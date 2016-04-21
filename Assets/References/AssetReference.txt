@@ -2,13 +2,12 @@
 Title Screen
 	Title Logo: http://cooltext.com/Render-Image?RenderID=178202317410096&LogoId=1782024306
 
-	title screen background: https://underdesign.files.wordpress.com/2010/03/presidential_desktop.jpg
+	title screen background: 
 
 				http://ztona.info/wp-content/uploads/2015/11/presidential-suite-the-white-house.jpg
 
-				limo: http://www.whatdafuh.com/wp-content/uploads/2015/05/president-obamas-limousine_100350544_l.jpg
-
-				rr car: http://img1.goodfon.su/original/1280x1024/d/29/ronald-reagan-ford-mustang.jpg
+				limo1: http://www.whatdafuh.com/wp-content/uploads/2015/05/president-obamas-limousine_100350544_l.jpg
+				limo2: http://www.desktopwallpaperhd.net/wallpapers/9/5/limousine-cadillac-presidential-background-wallpapers-92709.jpg
 
 	music: https://www.youtube.com/watch?v=q_ZKO-9aP44
 
@@ -17,4 +16,14 @@ Title Screen
 	Presidential Seal: https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Seal_of_the_President_of_the_United_States.svg/2000px-Seal_of_the_President_of_the_United_States.svg.png
 
 Credits Screen
-	credit background: 
+	credit background:https://underdesign.files.wordpress.com/2010/03/presidential_desktop.jpg
+
+Options Screen
+	background: http://www.wallpaperup.com/306776/2000px-US_Presidential_Flag_Navy_1899_svg.html
+	xbox controller: http://cdn.photonesta.com/images/console.maban.co.uk/device/xboxone/xboxone-controller.png
+	wasd keys:
+	arrow keys:
+	arrow: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2000px-Arrow_east.svg.png  
+
+Quit Screen
+	background: http://img1.goodfon.su/original/1280x1024/d/29/ronald-reagan-ford-mustang.jpg

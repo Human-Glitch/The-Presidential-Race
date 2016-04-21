@@ -54,7 +54,9 @@
      <Compile Include="Assets\Scripts\AIScript.cs" />
      <Compile Include="Assets\Scripts\CreditUI.cs" />
      <Compile Include="Assets\Scripts\KartMovement.cs" />
+     <Compile Include="Assets\Scripts\OptionsUI.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\QuitUI.cs" />
      <Compile Include="Assets\Scripts\TitleUI.cs" />
      <Compile Include="Assets\Scripts\WaypointScript.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
