@@ -9,12 +9,12 @@ public class OptionsUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+		mute.isOn = MusicManager.toggleState;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		 
 	}
 
 	public void Back(){
@@ -26,11 +26,15 @@ public class OptionsUI : MonoBehaviour {
 		//Mute the music
 
 		if (mute.isOn) {
-			print ("Muted");
+			//print ("Muted");
+			//MusicManager.GetComponent<AudioSource>().Stop ();
+			MusicManager.canPlay = false;
+
 		}
 
 		if (!mute.isOn) {
-			print ("Playing");
+			//print ("Playing");
+			MusicManager.canPlay = true;
 		}
 	}
 }
