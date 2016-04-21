@@ -53,6 +53,7 @@
      <Compile Include="Assets\EasyRoads3D Free\scripts\sideObjectScript.cs" />
      <Compile Include="Assets\Scripts\AIScript.cs" />
      <Compile Include="Assets\Scripts\CreditUI.cs" />
+     <Compile Include="Assets\Scripts\FlipMesh.cs" />
      <Compile Include="Assets\Scripts\KartMovement.cs" />
      <Compile Include="Assets\Scripts\OptionsUI.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
