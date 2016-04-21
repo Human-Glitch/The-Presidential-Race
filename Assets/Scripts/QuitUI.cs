@@ -17,13 +17,13 @@ public class QuitUI : MonoBehaviour {
 
 	public void Yes(){
 		//Quits the application
-		print ("Quitting");
+		//print ("Quitting");
 		//Application.Quit ();
 	}
 
 	public void No(){
 		//Goes back to the title
-		print ("Nope");
+		//print ("Nope");
 		SceneManager.LoadScene ("Title");
 	}
 }
