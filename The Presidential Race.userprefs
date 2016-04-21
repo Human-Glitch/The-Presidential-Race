@@ -1,11 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WaypointScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\QuitUI.cs">
     <Files>
-      <File FileName="Assets\Scripts\WaypointScript.cs" Line="42" Column="1" />
-      <File FileName="Assets\Scripts\KartMovement.cs" Line="78" Column="10" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="8" Column="5" />
-      <File FileName="Assets\Scripts\AIScript.cs" Line="8" Column="5" />
+      <File FileName="Assets\Scripts\TitleUI.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\WaypointScript.cs" Line="57" Column="16" />
+      <File FileName="Assets\Scripts\KartMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AIScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\QuitUI.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
