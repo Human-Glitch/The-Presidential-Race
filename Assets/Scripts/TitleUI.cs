@@ -18,8 +18,9 @@ public class TitleUI : MonoBehaviour {
 
 	//Title Screen Buttons
 	public void LetsRace(){
-		print ("Lets Race!");
+		//print ("Lets Race!");
 		//Load character select scene
+		SceneManager.LoadScene("CharSelect");
 	}
 
 	public void Credits(){

@@ -25,15 +25,12 @@ public class MusicManager : MonoBehaviour {
 	void Update () {
 		//Add in the track scene names to stop the music from playing
 		//Change loadedlevelname to scenemanager
+	/*
 		if (Application.loadedLevelName == "Quit") {
 			GetComponent<AudioSource>().Stop ();
 			audioStart = false;
 		}
-
-		if (Application.loadedLevelName == "Options" ) {
-			//print ("Test");
-
-		}
+	*/		
 
 		if (canPlay == false) {
 			AudioListener.pause = true;
