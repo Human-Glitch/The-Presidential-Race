@@ -27,3 +27,8 @@ Options Screen
 
 Quit Screen
 	background: http://img1.goodfon.su/original/1280x1024/d/29/ronald-reagan-ford-mustang.jpg
+
+Pause Screen
+	font:	http://www.1001freefonts.com/fire-fonts.php
+	background:	http://www.regent.edu/events/debate/
+	sound:	http://www.freesound.org/people/skycarl/sounds/156493/
