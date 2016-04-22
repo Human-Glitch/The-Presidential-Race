@@ -9,6 +9,7 @@ public class KartMovement : MonoBehaviour {
 	[SerializeField] private float accRate = 1f;
 	[SerializeField] private float maxSpeed = 15f;
 	[SerializeField] private float turnRate = 3f;
+	[SerializeField] private GameObject[] wheels;
 
 	public float inputMask = 1f; // Turns movement on or off
 	//[SerializeField] private UIScript userInterf;
