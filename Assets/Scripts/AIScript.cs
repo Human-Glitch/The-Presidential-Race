@@ -54,8 +54,7 @@ public class AIScript : MonoBehaviour {
 		else if (deltaTheta > 0)
 			input = -1f;
 
-		movement.Accelerate (1);
-		movement.Turn (input);
+		movement.Move (1, input);
 	}
 
 	public void SetTarget(Vector3 nextTarget) {
