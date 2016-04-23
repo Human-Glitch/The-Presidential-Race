@@ -52,6 +52,9 @@
      <Compile Include="Assets\EasyRoads3D Free\scripts\SurfaceScript.cs" />
      <Compile Include="Assets\EasyRoads3D Free\scripts\sideObjectScript.cs" />
      <Compile Include="Assets\Scripts\AIScript.cs" />
+     <Compile Include="Assets\Scripts\CarAIControl.cs" />
+     <Compile Include="Assets\Scripts\CarController.cs" />
+     <Compile Include="Assets\Scripts\CarUserControl.cs" />
      <Compile Include="Assets\Scripts\CharSelectUI.cs" />
      <Compile Include="Assets\Scripts\CreditUI.cs" />
      <Compile Include="Assets\Scripts\FlipMesh.cs" />
@@ -96,7 +99,6 @@
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
      <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\frag_ao.cginc" />
-     <None Include="Assets\Standard Assets\Vehicles\Aircraft\AircraftGuidelines.txt" />
      <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D Marker.shader" />
      <None Include="Assets\EasyRoads3D Free\Shaders\EasyRoads3D-Surface_Alpha.shader" />
      <None Include="Assets\Standard Assets\Vehicles\Car\Shaders\ReflectiveDiffuseSpecTransp.shader" />

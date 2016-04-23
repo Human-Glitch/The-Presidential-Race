@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System;
+using UnityStandardAssets.CrossPlatformInput;
 
 [RequireComponent(typeof(KartMovement))]
 

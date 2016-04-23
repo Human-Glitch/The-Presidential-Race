@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -52,12 +53,11 @@ public class KartMovement : MonoBehaviour {
 	}
 
 	public void Move(float turnInput, float accelInput) {
-		print ("In move");
 		for (int x = 0; x < 4; x++) {
 			Quaternion quat;
 			Vector3 position;
 			wheelColliders [x].GetWorldPose (out position, out quat);
-			wheelMeshes [x].transform.position = position;
+			//wheelMeshes [x].transform.position = position;
 			wheelMeshes [x].transform.rotation = quat;
 		}
 
@@ -71,6 +71,7 @@ public class KartMovement : MonoBehaviour {
 		}
 
 		wheelColliders [0].attachedRigidbody.AddForce (-transform.up * 100f * wheelColliders [0].attachedRigidbody.velocity.magnitude);
+
 	}
 }
 
