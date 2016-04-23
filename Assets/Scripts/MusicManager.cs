@@ -9,6 +9,9 @@ public class MusicManager : MonoBehaviour {
 	public static bool toggleState;
 
 
+	//I might make static bool variables for character selection here
+	//Might use this for the options in pause menu too
+
 	void Awake(){
 		if (!audioStart) {
 			GetComponent<AudioSource>().Play ();
@@ -25,15 +28,12 @@ public class MusicManager : MonoBehaviour {
 	void Update () {
 		//Add in the track scene names to stop the music from playing
 		//Change loadedlevelname to scenemanager
+	/*
 		if (Application.loadedLevelName == "Quit") {
 			GetComponent<AudioSource>().Stop ();
 			audioStart = false;
 		}
-
-		if (Application.loadedLevelName == "Options" ) {
-			//print ("Test");
-
-		}
+	*/		
 
 		if (canPlay == false) {
 			AudioListener.pause = true;

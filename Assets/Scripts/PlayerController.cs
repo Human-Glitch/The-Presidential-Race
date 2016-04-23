@@ -23,8 +23,7 @@ public class PlayerController : MonoBehaviour {
 		//Vector3 movVert = transform.forward * z;
 		//Vector3 velocity = (movHoriz + movVert).normalized;
 
-		movement.Accelerate (acc);
-		movement.Turn (x);
+		movement.Move (acc, x);
 		/*
 		float yRot = Input.GetAxis ("Mouse X");
 		float xRot = 0;//-Input.GetAxis ("Mouse Y");
