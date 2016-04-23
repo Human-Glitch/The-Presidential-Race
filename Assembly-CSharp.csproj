@@ -63,6 +63,7 @@
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\QuitUI.cs" />
      <Compile Include="Assets\Scripts\TitleUI.cs" />
+     <Compile Include="Assets\Scripts\TrackSelectUI.cs" />
      <Compile Include="Assets\Scripts\WaypointScript.cs" />
      <Compile Include="Assets\Scripts\WheelScript.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />

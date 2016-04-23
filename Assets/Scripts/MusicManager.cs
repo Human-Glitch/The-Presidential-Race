@@ -9,6 +9,9 @@ public class MusicManager : MonoBehaviour {
 	public static bool toggleState;
 
 
+	//I might make static bool variables for character selection here
+	//Might use this for the options in pause menu too
+
 	void Awake(){
 		if (!audioStart) {
 			GetComponent<AudioSource>().Play ();

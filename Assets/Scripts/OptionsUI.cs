@@ -27,7 +27,6 @@ public class OptionsUI : MonoBehaviour {
 
 		if (mute.isOn) {
 			//print ("Muted");
-			//MusicManager.GetComponent<AudioSource>().Stop ();
 			MusicManager.canPlay = false;
 
 		}
