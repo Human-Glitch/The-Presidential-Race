@@ -23,14 +23,21 @@ public class CharSelectUI : MonoBehaviour {
 
 	//sends the racer choice into the track selction screen
 	public void Racer1(){
-		print ("Racer1");
+		//print ("Racer1");
+		TrackLoad ();
 	}
 
 	public void Racer2(){
-		print ("Racer2");
+		//print ("Racer2");
+		TrackLoad ();
 	}
 
 	public void Racer3(){
-		print ("Racer3");
+		//print ("Racer3");
+		TrackLoad ();
+	}
+
+	public void TrackLoad(){
+		SceneManager.LoadScene ("TrackSelect");
 	}
 }

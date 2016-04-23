@@ -1,12 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TitleUI.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/References/AssetReference.txt">
     <Files>
-      <File FileName="Assets/Scripts/MusicManager.cs" Line="33" Column="4" />
-      <File FileName="Assets/Scripts/TitleUI.cs" Line="23" Column="40" />
+      <File FileName="Assets/References/AssetReference.txt" Line="35" Column="84" />
+      <File FileName="Assets/Scripts/MusicManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TitleUI.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/QuitUI.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/OptionsUI.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CharSelectUI.cs" Line="24" Column="57" />
+      <File FileName="Assets/Scripts/CharSelectUI.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TrackSelectUI.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

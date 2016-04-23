@@ -21,12 +21,18 @@ Credits Screen
 Options Screen
 	background: http://www.wallpaperup.com/306776/2000px-US_Presidential_Flag_Navy_1899_svg.html
 	xbox controller: http://cdn.photonesta.com/images/console.maban.co.uk/device/xboxone/xboxone-controller.png
-	wasd keys:
+	wasd keys:http://labs.minutelabs.io/Relativistic-Space-Sheep/library-build/images/wasd.png
 	arrow keys:
 	arrow: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2000px-Arrow_east.svg.png  
 
 Quit Screen
 	background: http://img1.goodfon.su/original/1280x1024/d/29/ronald-reagan-ford-mustang.jpg
+
+Character Select
+	background: http://www.cuewallpaper.xyz/uncategorized/america-flag-wallpaper-c78h/
+
+Track Select
+	background: http://www.cuewallpaper.xyz/uncategorized/america-flag-wallpaper-c78h/
 
 Pause Screen
 	font:	http://www.1001freefonts.com/fire-fonts.php
