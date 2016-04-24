@@ -48,8 +48,8 @@ public class KartMovement : MonoBehaviour {
 	public void UpdateWaypoint(GameObject nextWaypoint) {
 		targetWaypoint = nextWaypoint;
 		AIScript compScript = GetComponent<AIScript> ();
-		if (compScript != null)
-			compScript.SetTarget (targetWaypoint.GetComponent<WaypointScript> ().GetPoint ());
+		/*if (compScript != null)
+			compScript.SetTarget (targetWaypoint.GetComponent<WaypointScript> ().GetPoint ());*/
 	}
 
 	public void Move(float turnInput, float accelInput) {

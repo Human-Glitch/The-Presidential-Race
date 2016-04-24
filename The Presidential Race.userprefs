@@ -2,14 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\KartMovement.cs">
     <Files>
-      <File FileName="Assets\Standard Assets\Vehicles\Car\Scripts\CarController.cs" Line="261" Column="85" />
+      <File FileName="Assets\Scripts\CarUserControl.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\TitleUI.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\WaypointScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\PlayerController.cs" Line="26" Column="26" />
-      <File FileName="Assets\Scripts\AIScript.cs" Line="57" Column="28" />
-      <File FileName="Assets\Standard Assets\Vehicles\Car\Scripts\CarUserControl.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\KartMovement.cs" Line="37" Column="74" NotebookId="1" />
-      <File FileName="Assets\Scripts\WheelScript.cs" Line="13" Column="3" NotebookId="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\AIScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\KartMovement.cs" Line="37" Column="1" NotebookId="1" />
+      <File FileName="Assets\Scripts\WheelScript.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

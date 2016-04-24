@@ -53,7 +53,9 @@ namespace UnityStandardAssets.Vehicles.Car
         public float CurrentSpeed{ get { return m_Rigidbody.velocity.magnitude*2.23693629f; }}
         public float MaxSpeed{get { return m_Topspeed; }}
         public float Revs { get; private set; }
-        public float AccelInput { get; private set; }
+		public float AccelInput { get; private set; }
+
+		public GameObject targetWaypoint;
 
         // Use this for initialization
         private void Start()
@@ -69,6 +71,8 @@ namespace UnityStandardAssets.Vehicles.Car
 
             m_Rigidbody = GetComponent<Rigidbody>();
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
+
+			UpdateWaypoint (targetWaypoint);
         }
 
 
@@ -325,5 +329,14 @@ namespace UnityStandardAssets.Vehicles.Car
             }
             return false;
         }
+
+
+
+		public void UpdateWaypoint(GameObject nextWaypoint) {
+			targetWaypoint = nextWaypoint;
+			CarAIControl compScript = GetComponent<CarAIControl> ();
+			if (compScript != null)
+				compScript.SetTarget (targetWaypoint.GetComponent<WaypointScript> ().GetPoint ());
+		}
     }
 }
