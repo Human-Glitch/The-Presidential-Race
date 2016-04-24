@@ -8,8 +8,14 @@ public class MusicManager : MonoBehaviour {
 	public static bool canPlay = true;
 	public static bool toggleState;
 
+	//Bool for racer choice
+	public static bool washington = false;
+	public static bool lincoln = false;
+	public static bool taft = false;
 
-	//I might make static bool variables for character selection here
+	public static bool racerReset = false;
+
+
 	//Might use this for the options in pause menu too
 
 	void Awake(){
@@ -49,6 +55,24 @@ public class MusicManager : MonoBehaviour {
 
 		}
 
+		if (Application.loadedLevelName == "Title") {
+			RacerReset ();
+		}
+
+		//Calls the racer reset method
+		if(racerReset == true){
+			RacerReset ();
+			racerReset = false;
+		}
+			
 	}
-		
+
+	//Reset the racer choice
+	public void RacerReset(){
+		washington = false;
+		lincoln = false;
+		taft = false;
+		print ("Racer reset");
+	}
+
 }

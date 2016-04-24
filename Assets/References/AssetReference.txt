@@ -17,6 +17,7 @@ Title Screen
 
 Credits Screen
 	credit background:https://underdesign.files.wordpress.com/2010/03/presidential_desktop.jpg
+	blue team logo: http://cooltext.com/Render-Image?RenderID=178948933116177&LogoId=1789489331
 
 Options Screen
 	background: http://www.wallpaperup.com/306776/2000px-US_Presidential_Flag_Navy_1899_svg.html
@@ -24,15 +25,25 @@ Options Screen
 	wasd keys:http://labs.minutelabs.io/Relativistic-Space-Sheep/library-build/images/wasd.png
 	arrow keys:
 	arrow: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2000px-Arrow_east.svg.png  
-
+	options logo: http://cooltext.com/Render-Image?RenderID=178949191606165&LogoId=1789491916
+	controls logo: http://cooltext.com/Render-Image?RenderID=178949265557863&LogoId=1789492655
 Quit Screen
 	background: http://img1.goodfon.su/original/1280x1024/d/29/ronald-reagan-ford-mustang.jpg
+	flag outline: http://www.datemplate.com/postpic/2009/11/blank-flag-clip-art_233852.png
+	are you sure: http://cooltext.com/Render-Image?RenderID=178948597561738&LogoId=1789485975
 
 Character Select
 	background: http://www.cuewallpaper.xyz/uncategorized/america-flag-wallpaper-c78h/
+	washington pic: https://upload.wikimedia.org/wikipedia/commons/9/95/Washington_Crossing_the_Delaware_by_Emanuel_Leutze,_MMA-NYC,_1851.jpg
+	lincoln: http://digitaldeconstruction.com/wp-content/uploads/2012/11/Abe-Lincoln-6.jpg
+	taft: https://neitshade5.files.wordpress.com/2013/09/william-howard-taft.jpg
+	banner: http://cooltext.com/Render-Image?RenderID=178946208082813&LogoId=1789462080
+	flag outline: http://www.datemplate.com/postpic/2009/11/blank-flag-clip-art_233852.png
 
 Track Select
 	background: http://www.cuewallpaper.xyz/uncategorized/america-flag-wallpaper-c78h/
+	flag outline: http://www.datemplate.com/postpic/2009/11/blank-flag-clip-art_233852.png
+	logo: http://cooltext.com/Render-Image?RenderID=178949850869200&LogoId=1789498508
 
 Pause Screen
 	font:	http://www.1001freefonts.com/fire-fonts.php
