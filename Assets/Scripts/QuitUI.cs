@@ -17,8 +17,8 @@ public class QuitUI : MonoBehaviour {
 
 	public void Yes(){
 		//Quits the application
-		print ("Quitting");
-		//Application.Quit ();
+		//print ("Quitting");
+		Application.Quit ();
 	}
 
 	public void No(){
