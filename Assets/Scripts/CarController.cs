@@ -56,6 +56,7 @@ namespace UnityStandardAssets.Vehicles.Car
 		public float AccelInput { get; private set; }
 
 		public GameObject targetWaypoint;
+		private int waypointsHit = -1;
 
         // Use this for initialization
         private void Start()
@@ -334,6 +335,7 @@ namespace UnityStandardAssets.Vehicles.Car
 
 		public void UpdateWaypoint(GameObject nextWaypoint) {
 			targetWaypoint = nextWaypoint;
+			waypointsHit++;
 			CarAIControl compScript = GetComponent<CarAIControl> ();
 			if (compScript != null)
 				compScript.SetTarget (targetWaypoint.GetComponent<WaypointScript> ().GetPoint ());
