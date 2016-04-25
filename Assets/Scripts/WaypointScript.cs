@@ -28,11 +28,9 @@ namespace UnityStandardAssets.Vehicles.Car
 
 			if (other.name == "Terrain")
 				return;
-			print (other.name);
 
 			CarController otherScript = other.gameObject.GetComponent<CarController> ();
 			if (otherScript.targetWaypoint == this.gameObject) {
-				print ("Hit");
 				otherScript.UpdateWaypoint(nextWaypoint);
 				if(isFinishLine) {
 					// Update GUI
