@@ -6,6 +6,9 @@ using System.Collections;
 public class PauseUI : MonoBehaviour {
 	public Button cont, restart, options, exit;
 
+	public Canvas pauseCanvas;
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -18,12 +21,14 @@ public class PauseUI : MonoBehaviour {
 	public void ContinueRace(){
 		print ("Lets Race!");
 		//start clock again
+		Time.timeScale = 1.0f;
+		pauseCanvas.enabled = false;
 
 	}
 
 	public void Restart(){
 		print ("Back to Start!");
-		//load starting scene of specific race
+
 	}
 
 	public void OptionsLoad(){

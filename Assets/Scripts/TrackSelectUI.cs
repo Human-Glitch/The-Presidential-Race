@@ -6,10 +6,8 @@ using System.Collections;
 public class TrackSelectUI : MonoBehaviour {
 	public Button track1, track2, track3, back;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -23,9 +21,9 @@ public class TrackSelectUI : MonoBehaviour {
 		//Pauses the menu music while in level
 		MusicManager.canPlay = false;
 
+
 		//Load track one with the racer choice
 		SceneManager.LoadScene("RushmoreTrack");
-
 		//print ("Track 1");
 		Racer ();
 
@@ -35,9 +33,9 @@ public class TrackSelectUI : MonoBehaviour {
 		//Pauses the menu music while in level
 		MusicManager.canPlay = false;
 
+
 		//Load track two with the racer choice
 		SceneManager.LoadScene("OvalOfficeTrack");
-
 
 		//print ("Track 2");
 		Racer ();
@@ -47,9 +45,9 @@ public class TrackSelectUI : MonoBehaviour {
 		//Pauses the menu music while in level
 		MusicManager.canPlay = false;
 
+
 		//Load track three with the racer choice
 		//SceneManager.LoadScene("ThirdTrackNameHere");
-
 		//print ("Track 3");
 		Racer ();
 	}
@@ -63,7 +61,7 @@ public class TrackSelectUI : MonoBehaviour {
 
 
 	//Test method to print the player's racer choice
-	public static void Racer(){
+	public void Racer(){
 		if (MusicManager.washington == true) {
 			print ("Washington");
 		}

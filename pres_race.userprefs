@@ -1,10 +1,16 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\References\AssetReference.txt">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CarUserControl.cs">
     <Files>
-      <File FileName="Assets\Scripts\TitleUI.cs" Line="44" Column="1" />
+      <File FileName="Assets\Scripts\PlayerController.cs" Line="1" Column="19" />
+      <File FileName="Assets\Scripts\CarUserControl.cs" Line="6" Column="1" />
+      <File FileName="Assets\Scripts\TitleUI.cs" Line="2" Column="1" />
+      <File FileName="Assets\Scripts\TrackSelectUI.cs" Line="55" Column="5" />
       <File FileName="Assets\Scripts\PauseUI.cs" Line="21" Column="3" />
       <File FileName="Assets\References\AssetReference.txt" Line="34" Column="63" />
+      <File FileName="Assets\Scripts\KartMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CarController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SceneManager.cs" Line="11" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
