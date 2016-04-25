@@ -1,18 +1,11 @@
 
 Title Screen
 	Title Logo: http://cooltext.com/Render-Image?RenderID=178202317410096&LogoId=1782024306
-
 	title screen background: 
-
-				http://ztona.info/wp-content/uploads/2015/11/presidential-suite-the-white-house.jpg
-
-				limo1: http://www.whatdafuh.com/wp-content/uploads/2015/05/president-obamas-limousine_100350544_l.jpg
-				limo2: http://www.desktopwallpaperhd.net/wallpapers/9/5/limousine-cadillac-presidential-background-wallpapers-92709.jpg
+					limo2: http://www.desktopwallpaperhd.net/wallpapers/9/5/limousine-cadillac-presidential-background-wallpapers-92709.jpg
 
 	music: https://www.youtube.com/watch?v=q_ZKO-9aP44
-
 	white circle button: http://dabuttonfactory.com/#t=OK&f=Calibri-Bold&ts=28&tc=f5f5f5&w=50&h=50&c=round&bgt=unicolored&bgc=351c75&bs=2&bc=f5f5f5&shs=1&shc=999&sho=s
-
 	Presidential Seal: https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Seal_of_the_President_of_the_United_States.svg/2000px-Seal_of_the_President_of_the_United_States.svg.png
 
 Credits Screen
@@ -20,13 +13,17 @@ Credits Screen
 	blue team logo: http://cooltext.com/Render-Image?RenderID=178948933116177&LogoId=1789489331
 
 Options Screen
+	background: http://www.wallpaperup.com/306776/2000px-US_Presidential_Flag_Navy_1899_svg.html  
+	options logo: http://cooltext.com/Render-Image?RenderID=178949191606165&LogoId=1789491916
+
+
+Controls
+	keys: http://www.clker.com/cliparts/c/c/x/M/O/O/blank-keyboard-keys-md.png
 	background: http://www.wallpaperup.com/306776/2000px-US_Presidential_Flag_Navy_1899_svg.html
 	xbox controller: http://cdn.photonesta.com/images/console.maban.co.uk/device/xboxone/xboxone-controller.png
-	wasd keys:http://labs.minutelabs.io/Relativistic-Space-Sheep/library-build/images/wasd.png
-	arrow keys:
-	arrow: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2000px-Arrow_east.svg.png  
-	options logo: http://cooltext.com/Render-Image?RenderID=178949191606165&LogoId=1789491916
+	arrow: https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arrow_east.svg/2000px-Arrow_east.svg.png
 	controls logo: http://cooltext.com/Render-Image?RenderID=178949265557863&LogoId=1789492655
+
 Quit Screen
 	background: http://img1.goodfon.su/original/1280x1024/d/29/ronald-reagan-ford-mustang.jpg
 	flag outline: http://www.datemplate.com/postpic/2009/11/blank-flag-clip-art_233852.png
