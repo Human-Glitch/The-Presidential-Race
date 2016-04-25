@@ -17,6 +17,11 @@ public class OptionsUI : MonoBehaviour {
 		 
 	}
 
+	public void Controls(){
+		//Load Control scene
+		SceneManager.LoadScene("Controls");
+	}
+
 	public void Back(){
 		//Load the title screen
 		SceneManager.LoadScene("Title");

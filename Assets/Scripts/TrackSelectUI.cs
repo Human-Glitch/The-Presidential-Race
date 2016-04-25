@@ -16,23 +16,40 @@ public class TrackSelectUI : MonoBehaviour {
 	
 	}
 
-	//possibly call the music manager to check the racer choice
-	//make method for racer choices
+	//NOTE: From the endRace scene playagain button and the pause menu quit button
+	//be sure to use MusicManager.canPlay = true;
+
 	public void Track1(){
+		//Pauses the menu music while in level
+		MusicManager.canPlay = false;
+
 		//Load track one with the racer choice
+		SceneManager.LoadScene("RushmoreTrack");
+
 		//print ("Track 1");
 		Racer ();
 
 	}
 
 	public void Track2(){
+		//Pauses the menu music while in level
+		MusicManager.canPlay = false;
+
 		//Load track two with the racer choice
+		SceneManager.LoadScene("OvalOfficeTrack");
+
+
 		//print ("Track 2");
 		Racer ();
 	}
 
 	public void Track3(){
+		//Pauses the menu music while in level
+		MusicManager.canPlay = false;
+
 		//Load track three with the racer choice
+		//SceneManager.LoadScene("ThirdTrackNameHere");
+
 		//print ("Track 3");
 		Racer ();
 	}

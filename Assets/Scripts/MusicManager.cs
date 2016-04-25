@@ -32,29 +32,21 @@ public class MusicManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		//Add in the track scene names to stop the music from playing
-		//Change loadedlevelname to scenemanager
-	/*
-		if (Application.loadedLevelName == "Quit") {
-			GetComponent<AudioSource>().Stop ();
-			audioStart = false;
-		}
-	*/		
-
+		//Pauses the music
 		if (canPlay == false) {
 			AudioListener.pause = true;
 			toggleState = true;
-			//audioStart = false;
-
+	
 		}
 
+		//Plays the music
 		if (canPlay == true) {
-			//audioStart = true;
 			AudioListener.pause = false;
 			toggleState = false;
 
 		}
 
+		//Resets the racer selection if player goes back to main menu
 		if (Application.loadedLevelName == "Title") {
 			RacerReset ();
 		}
