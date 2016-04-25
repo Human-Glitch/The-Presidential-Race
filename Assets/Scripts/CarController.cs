@@ -73,7 +73,7 @@ namespace UnityStandardAssets.Vehicles.Car
             m_Rigidbody = GetComponent<Rigidbody>();
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
 
-			UpdateWaypoint (targetWaypoint);
+			if(targetWaypoint != null) UpdateWaypoint (targetWaypoint);
         }
 
 
