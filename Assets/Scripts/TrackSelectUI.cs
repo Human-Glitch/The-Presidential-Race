@@ -47,7 +47,8 @@ public class TrackSelectUI : MonoBehaviour {
 
 
 		//Load track three with the racer choice
-		//SceneManager.LoadScene("ThirdTrackNameHere");
+		SceneManager.LoadScene("WhiteHouseTrack");
+
 		//print ("Track 3");
 		Racer ();
 	}
