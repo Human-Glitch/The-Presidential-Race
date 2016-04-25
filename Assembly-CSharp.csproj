@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\WaypointScript.cs" />
      <Compile Include="Assets\Scripts\WheelScript.cs" />
      <Compile Include="Assets\Scripts\respawnScripts\Checkpoint.cs" />
+     <Compile Include="Assets\Scripts\respawnScripts\KillPlayer.cs" />
      <Compile Include="Assets\Scripts\respawnScripts\LevelManager.cs" />
      <None Include="Assets\Standard Assets\Effects\GlassRefraction\Shaders\GlassStainedBumpDistort.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />

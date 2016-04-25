@@ -259,8 +259,13 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{E4D6EE65-CB4A-72C4-00D8-78C4073AB3C8}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+<<<<<<< Updated upstream
 >>>>>>> d5ec5a4b8802c7e20d4775835db1bfd726ad9cc1
 >>>>>>> 2e260b6709d670e905a612d9398692b5346db07a
+=======
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{267905CC-5603-83B1-33D8-22F5D96B153E}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+>>>>>>> Stashed changes
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
