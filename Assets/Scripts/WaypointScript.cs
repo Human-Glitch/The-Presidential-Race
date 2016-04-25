@@ -29,14 +29,6 @@ namespace UnityStandardAssets.Vehicles.Car
 			if (other.name == "Terrain")
 				return;
 
-<<<<<<< Updated upstream
-			CarController otherScript = other.gameObject.GetComponent<CarController> ();
-			if (otherScript != null && otherScript.targetWaypoint == this.gameObject) {
-				otherScript.UpdateWaypoint(nextWaypoint);
-				if(isFinishLine) {
-					// Update GUI
-					print("Lap, " + other.name);
-=======
 			if (other.tag == "AI") {
 				CarController otherScript = other.gameObject.GetComponent<CarController> ();
 				if (otherScript.targetWaypoint == this.gameObject) {
@@ -45,8 +37,9 @@ namespace UnityStandardAssets.Vehicles.Car
 						// Update GUI
 						print ("Lap, " + other.name);
 					}
->>>>>>> Stashed changes
+
 				}
+
 			}
 		}
 
