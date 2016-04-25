@@ -2,11 +2,13 @@
 using System.Collections;
 
 public class LevelManager : MonoBehaviour {
-	
+
+	public GameObject player;
+
 	public GameObject currentCheckpoint;
 	public GameObject deathParticle;
 	public GameObject respawnParticle;
-	public GameObject player;
+
 
 	public float respawnDelay;
 
@@ -32,20 +34,21 @@ public class LevelManager : MonoBehaviour {
 	public IEnumerator RespawnPlayerCo(){
 		Debug.Log ("Player Respawn");
 
-		if (notDead) {
 
-			Instantiate (deathParticle, player.transform.position, player.transform.rotation);
-			notDead = false;
+			if (notDead) {
 
-			player.active = false;
+				Instantiate (deathParticle, player.transform.position, player.transform.rotation);
+				notDead = false;
 
-			yield return new WaitForSeconds (respawnDelay);
+				//player.active = false;
 
-			player.transform.position = currentCheckpoint.transform.position;
-			player.active = true;
+				yield return new WaitForSeconds (respawnDelay);
 
-			Instantiate (respawnParticle, currentCheckpoint.transform.position, currentCheckpoint.transform.rotation);
-			notDead = true;
-		}
+				player.transform.position = currentCheckpoint.transform.position;
+				//player.active = true;
+
+				Instantiate (respawnParticle, currentCheckpoint.transform.position, currentCheckpoint.transform.rotation);
+				notDead = true;
+			}
 	}
 }
