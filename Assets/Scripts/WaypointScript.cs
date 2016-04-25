@@ -30,7 +30,7 @@ namespace UnityStandardAssets.Vehicles.Car
 				return;
 
 			CarController otherScript = other.gameObject.GetComponent<CarController> ();
-			if (otherScript.targetWaypoint == this.gameObject) {
+			if (otherScript != null && otherScript.targetWaypoint == this.gameObject) {
 				otherScript.UpdateWaypoint(nextWaypoint);
 				if(isFinishLine) {
 					// Update GUI
