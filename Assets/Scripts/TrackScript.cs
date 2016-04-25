@@ -21,15 +21,17 @@ namespace UnityStandardAssets.Vehicles.Car
 			GameObject player, ai1, ai2;
 
 			if (MusicManager.washington == true) {
+				print ("washington");
 				player = Resources.Load ("Washington (Player)") as GameObject;
 				ai1 = Resources.Load ("Taft (AI)") as GameObject;
 				ai2 = Resources.Load ("Lincoln (AI)") as GameObject;
-			} if (MusicManager.lincoln == true) {
+			} else if (MusicManager.lincoln == true) {
+				print ("lincoln");
 				player = Resources.Load ("Lincoln (Player)") as GameObject;
 				ai1 = Resources.Load ("Taft (AI)") as GameObject;
 				ai2 = Resources.Load ("Washington (AI)") as GameObject;
-				print ("Lincoln");
 			} else {
+				print ("taft");
 				player = Resources.Load ("Taft (Player)") as GameObject;
 				ai1 = Resources.Load ("Washington (AI)") as GameObject;
 				ai2 = Resources.Load ("Lincoln (AI)") as GameObject;

@@ -26,10 +26,12 @@ namespace UnityStandardAssets.Vehicles.Car
 
 		void OnTriggerEnter(Collider other) {
 
-			if (other.name == "Terrain")
-				return;
+			/*if (other.name == "Terrain")
+				return;*/
 
-			if (other.tag == "AI") {
+			print ("Hit" + this.name + ":" + other.name);
+			if (other.tag == "Player") {
+				print ("Hit" + this.name + ":" + other.name);
 				CarController otherScript = other.gameObject.GetComponent<CarController> ();
 				if (otherScript.targetWaypoint == this.gameObject) {
 					otherScript.UpdateWaypoint (nextWaypoint);
@@ -59,7 +61,7 @@ namespace UnityStandardAssets.Vehicles.Car
 			point.x += r;
 
 			GameObject mark = Instantiate (marker, point, transform.rotation) as GameObject;
-			Destroy (mark, 20);
+			Destroy (mark, 30);
 			return mark.transform;
 		}
 	}
