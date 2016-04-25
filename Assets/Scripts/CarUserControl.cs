@@ -10,19 +10,19 @@ namespace UnityStandardAssets.Vehicles.Car
     public class CarUserControl : MonoBehaviour
     {
         private CarController m_Car; // the car controller we want to use
-		public Canvas pauseCanvas;
 
 
         private void Awake()
         {
-            // get the car controller
+			// get the car controller
             m_Car = GetComponent<CarController>();
-			pauseCanvas.enabled = false;
+
         }
 
 
         private void FixedUpdate()
         {
+			
             // pass the input to the car!
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
@@ -33,13 +33,7 @@ namespace UnityStandardAssets.Vehicles.Car
             m_Car.Move(h, v, v, 0f);
 #endif
 
-			//Pause menu control
-			if (Input.GetKeyDown (KeyCode.Escape)) {
-				print ("PAUSED!");
-				Time.timeScale = 0;
-				pauseCanvas.enabled = true;
-
+	
 			}
-        }
     }
 }

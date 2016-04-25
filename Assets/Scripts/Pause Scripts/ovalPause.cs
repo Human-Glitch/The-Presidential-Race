@@ -3,21 +3,31 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class PauseUI : MonoBehaviour {
-	public Button cont, restart, options, exit;
+public class ovalPause : MonoBehaviour {
+	public Button cont, restart, exit;
 
 	public Canvas pauseCanvas;
 
 
 	// Use this for initialization
 	void Start () {
-	
+		pauseCanvas.enabled = false;
+
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-	
+	void FixedUpdate () {
+
+		//Pause menu control
+		if (Input.GetKeyDown (KeyCode.Escape)) {
+			print ("PAUSED!");
+			Time.timeScale = 0;
+			pauseCanvas.enabled = true;
+		}
+
+
 	}
+
 	public void ContinueRace(){
 		print ("Lets Race!");
 		//start clock again
@@ -28,13 +38,10 @@ public class PauseUI : MonoBehaviour {
 
 	public void Restart(){
 		print ("Back to Start!");
+		Time.timeScale = 1.0f;
+		pauseCanvas.enabled = false;
+		SceneManager.LoadScene ("OvalOfficeTrack");
 
-	}
-
-	public void OptionsLoad(){
-		//print ("Options");
-		// display options scene
-		SceneManager.LoadScene("Options");
 	}
 
 	public void BackToTitle(){
