@@ -11,6 +11,7 @@ namespace UnityStandardAssets.Vehicles.Car
 		public float kartScale;
 
 		public GameObject startWaypoint;
+		public Canvas hud;
 
 
 		// Use this for initialization
@@ -39,18 +40,25 @@ namespace UnityStandardAssets.Vehicles.Car
 			}
 
 			Vector3 scale = new Vector3 (kartScale, kartScale, kartScale);
-			GameObject kart = Instantiate (player, startPoint, Quaternion.Euler (startRotation)) as GameObject;
-			kart.transform.localScale = scale;
-			CarController script = kart.GetComponent<CarController> ();
+			GameObject kart1 = Instantiate (player, startPoint, Quaternion.Euler (startRotation)) as GameObject;
+			kart1.transform.localScale = scale;
+			CarController script = kart1.GetComponent<CarController> ();
 			script.UpdateWaypoint (startWaypoint);
-			kart = Instantiate (ai1, leftPoint, Quaternion.Euler (startRotation)) as GameObject;
-			kart.transform.localScale = scale;
-			script = kart.GetComponent<CarController> ();
+			script.hud = hud;
+			GameObject kart2 = Instantiate (ai1, leftPoint, Quaternion.Euler (startRotation)) as GameObject;
+			kart2.transform.localScale = scale;
+			script = kart2.GetComponent<CarController> ();
 			script.UpdateWaypoint (startWaypoint);
-			kart = Instantiate (ai2, rightPoint, Quaternion.Euler (startRotation)) as GameObject;
-			kart.transform.localScale = scale;
-			script = kart.GetComponent<CarController> ();
+			script.hud = hud;
+			GameObject kart3 = Instantiate (ai2, rightPoint, Quaternion.Euler (startRotation)) as GameObject;
+			kart3.transform.localScale = scale;
+			script = kart3.GetComponent<CarController> ();
 			script.UpdateWaypoint (startWaypoint);
+			script.hud = hud;
+
+			hud.GetComponent<>(HUD).SetRacers (kart1, kart2, kart3);
+
+
 		}
 		
 		// Update is called once per frame
