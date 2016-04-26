@@ -58,6 +58,8 @@ namespace UnityStandardAssets.Vehicles.Car
 		public GameObject targetWaypoint;
 		public int waypointsHit = -1;
 		[HideInInspector] public bool running = true;
+		private float spinTime = 0f;
+		[HideInInspector] public Canvas hud = null;
 
         // Use this for initialization
         private void Start()
@@ -135,6 +137,9 @@ namespace UnityStandardAssets.Vehicles.Car
         public void Move(float steering, float accel, float footbrake, float handbrake)
         {
 			if (!running)
+				return;
+			
+			if (spinTime > 0f)
 				return;
 			
             for (int i = 0; i < 4; i++)
@@ -343,6 +348,29 @@ namespace UnityStandardAssets.Vehicles.Car
 			CarAIControl compScript = GetComponent<CarAIControl> ();
 			if (compScript != null)
 				compScript.SetTarget (targetWaypoint.GetComponent<WaypointScript> ().GetPoint ());
+		}
+
+
+
+
+		void OnTriggerEnter(Collider other) {
+			if (other.gameObject.tag == "Player" && spinTime < -3) {
+				other.gameObject.GetComponent<CarController> ().SpinOut (0.5f);
+				SpinOut (0.5f);
+			}
+		}
+
+		public void SpinOut(float odds) {
+			if (spinTime <= 0f && UnityEngine.Random.value < odds) {
+				spinTime = 2f;
+			}
+		}
+
+		void Update() {
+			if (spinTime > 0f) {
+				transform.Rotate (new Vector3 (0f, 360f * Time.deltaTime, 0f));
+			}
+			spinTime -= Time.deltaTime;
 		}
     }
 }
