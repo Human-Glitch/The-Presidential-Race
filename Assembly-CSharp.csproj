@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\ControlsUI.cs" />
      <Compile Include="Assets\Scripts\CreditUI.cs" />
      <Compile Include="Assets\Scripts\DayNightController.cs" />
+     <Compile Include="Assets\Scripts\EndRaceUIScript.cs" />
      <Compile Include="Assets\Scripts\FlipMesh.cs" />
      <Compile Include="Assets\Scripts\HUD.cs" />
      <Compile Include="Assets\Scripts\IconScript.cs" />

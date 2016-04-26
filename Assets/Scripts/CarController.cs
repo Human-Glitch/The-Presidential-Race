@@ -56,7 +56,8 @@ namespace UnityStandardAssets.Vehicles.Car
 		public float AccelInput { get; private set; }
 
 		public GameObject targetWaypoint;
-		private int waypointsHit = -1;
+		public int waypointsHit = -1;
+		[HideInInspector] public bool running = true;
 
         // Use this for initialization
         private void Start()
@@ -133,6 +134,9 @@ namespace UnityStandardAssets.Vehicles.Car
 
         public void Move(float steering, float accel, float footbrake, float handbrake)
         {
+			if (!running)
+				return;
+			
             for (int i = 0; i < 4; i++)
             {
                 Quaternion quat;
