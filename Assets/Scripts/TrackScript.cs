@@ -56,7 +56,7 @@ namespace UnityStandardAssets.Vehicles.Car
 			script.UpdateWaypoint (startWaypoint);
 			script.hud = hud;
 
-			hud.GetComponent<>(HUD).SetRacers (kart1, kart2, kart3);
+			//hud.GetComponent<>(HUD).SetRacers (kart1, kart2, kart3);
 
 
 		}
