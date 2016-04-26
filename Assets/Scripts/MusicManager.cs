@@ -14,6 +14,7 @@ public class MusicManager : MonoBehaviour {
 	public static bool taft = false;
 
 	public static bool racerReset = false;
+    public static int place = 1;
 
 
 	//Might use this for the options in pause menu too
