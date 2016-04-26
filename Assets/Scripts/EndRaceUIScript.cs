@@ -6,10 +6,13 @@ using System.Collections;
 public class EndRaceUIScript : MonoBehaviour {
 
     public Button raceAgain, quitToMenu;
+    public Text placeText;
+    public int place;
 
 	// Use this for initialization
 	void Start () {
-	
+        place = MusicManager.place;
+        placeText.text = "You Placed: " + place.ToString();
 	}
 	
 	// Update is called once per frame
