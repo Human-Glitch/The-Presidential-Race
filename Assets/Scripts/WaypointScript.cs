@@ -8,6 +8,7 @@ namespace UnityStandardAssets.Vehicles.Car
 		public GameObject marker;
 		public GameObject nextWaypoint;
 		public bool isFinishLine = false;
+		public Canvas hud;
 
 		// Use this for initialization
 		void Awake () {
@@ -29,7 +30,6 @@ namespace UnityStandardAssets.Vehicles.Car
 			/*if (other.name == "Terrain")
 				return;*/
 
-			print ("Hit" + this.name + ":" + other.name);
 			if (other.tag == "Player") {
 				print ("Hit" + this.name + ":" + other.name);
 				CarController otherScript = other.gameObject.GetComponent<CarController> ();
@@ -37,6 +37,7 @@ namespace UnityStandardAssets.Vehicles.Car
 					otherScript.UpdateWaypoint (nextWaypoint);
 					if (isFinishLine) {
 						// Update GUI
+						hud.GetComponent<HUD>().lap(other.gameObject);
 						print ("Lap, " + other.name);
 					}
 
