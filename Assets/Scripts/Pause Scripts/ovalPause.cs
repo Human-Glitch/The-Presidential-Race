@@ -16,7 +16,7 @@ public class ovalPause : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 
 		//Pause menu control
 		if (Input.GetKeyDown (KeyCode.Escape)) {
