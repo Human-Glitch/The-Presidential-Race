@@ -49,4 +49,8 @@ public class whitePause : MonoBehaviour {
 		// quits the current race and goes back to the title screen
 		SceneManager.LoadScene("Title");
 	}
+
+	public void SetRacers(GameObject player, GameObject ai1, GameObject ai2){
+
+	}
 }
