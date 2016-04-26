@@ -46,3 +46,14 @@ Pause Screen
 	font:	http://www.1001freefonts.com/fire-fonts.php
 	background:	http://www.regent.edu/events/debate/
 	sound:	http://www.freesound.org/people/skycarl/sounds/156493/
+
+
+Skybox Asset/NightSky Cubemap
+https://img-origin.cgtrader.com/items/51356/sky01_hdri_3d_model_3ds_c51df0de-d928-4fb4-ae30-df1001794eaa.jpg
+
+pavementTexture
+http://designscrazed.org/free-asphalt-textures/
+
+
+gravelTexture
+http://paper-backgrounds.com/concrete-textures/gravel-texture-background
