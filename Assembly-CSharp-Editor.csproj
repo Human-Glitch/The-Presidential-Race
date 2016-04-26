@@ -215,13 +215,9 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-<<<<<<< HEAD
       <Project>{54740428-17E7-669F-EA36-0C2C9883841D}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
-=======
-      <Project>{B6BE172B-8F8A-2B94-D7EA-E3C9112AA474}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{CD9F887F-51F1-4A44-F338-5F057C98ABF4}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
->>>>>>> 727507edc60573d71364a159cce4fbe1ae0ba006
+      <Project>{9621C494-35C0-ADF2-4B4C-3BF9C6819AFD}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
