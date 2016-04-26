@@ -48,7 +48,6 @@ public class HUD : MonoBehaviour {
 
 		//updates the HUD time text
 		if (raceStarted == true) {
-			Time.timeScale = 1.0f;
 			time = time + Time.deltaTime;
 			timeLabel.enabled = true;
 			timeLabel.text = string.Format ("{0:00}:{1:00}:{2:00}", minutes, seconds, fraction);
@@ -73,5 +72,10 @@ public class HUD : MonoBehaviour {
 		yield return new WaitForSeconds (0.09f);
 		go.enabled = false;
 		raceStarted = true;
+		startTime ();
 	}
+	void startTime(){
+		Time.timeScale = 1.0f;
+	}
+
 }
