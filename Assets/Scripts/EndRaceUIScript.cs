@@ -21,7 +21,7 @@ public class EndRaceUIScript : MonoBehaviour {
     {
         // Add code to restart race with same conditions
         Debug.Log("Race Again!");
-        SceneManager.LoadScene("CharSelect");
+        SceneManager.LoadScene("Title");
     }
 
     public void quitToTheDesktop()

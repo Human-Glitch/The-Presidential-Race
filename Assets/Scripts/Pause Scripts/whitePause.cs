@@ -9,19 +9,20 @@ public class whitePause : MonoBehaviour {
 	public Canvas pauseCanvas;
 
 
+
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		pauseCanvas.enabled = false;
 
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 
 		//Pause menu control
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			print ("PAUSED!");
-			Time.timeScale = 0;
+			Time.timeScale = 0f;
 			pauseCanvas.enabled = true;
 		}
 
@@ -47,5 +48,9 @@ public class whitePause : MonoBehaviour {
 		//print ("Title Page Loaded");
 		// quits the current race and goes back to the title screen
 		SceneManager.LoadScene("Title");
+	}
+
+	public void SetRacers(GameObject player, GameObject ai1, GameObject ai2){
+
 	}
 }

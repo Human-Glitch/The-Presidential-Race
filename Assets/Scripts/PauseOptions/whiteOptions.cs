@@ -6,12 +6,10 @@ using System.Collections;
 public class whiteOptions : MonoBehaviour {
 	public Toggle mute;
 
-	public Canvas optionsCanvas;
 
 	// Use this for initialization
 	void Start () {
 		mute.isOn = MusicManager.toggleState;
-		optionsCanvas.enabled = true;
 	}
 
 	public void Mute(){
