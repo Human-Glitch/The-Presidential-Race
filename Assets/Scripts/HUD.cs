@@ -1,81 +1,114 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class HUD : MonoBehaviour {
-	public Text timeLabel;
-	public Text three, two, one, go;
-	public bool starttime = false;
-	private AudioSource beepSound;
-	private bool raceStarted = false;
+namespace UnityStandardAssets.Vehicles.Car
+{
+	public class HUD : MonoBehaviour {
+		public Text timeLabel;
+		public Text three, two, one, go;
+		public bool starttime = false;
+		private AudioSource beepSound;
+		private bool raceStarted = false;
 
-	//public Text lapLabel;
+		public Text lapText;
+		private int lap = 1;
+		private int place = 1;
 
-	private float time;
+		private GameObject player, ai1, ai2;
 
-	void Awake(){
-	}
-	void Start () {
-		Time.timeScale = 0.1f;
-		beepSound = GetComponent<AudioSource>();
+		//public Text lapLabel;
 
-		three.enabled = true;
-		two.enabled = false;
-		one.enabled = false;
-		go.enabled = false;
+		private float time;
 
-		timeLabel.enabled = false;
+		void Awake(){
+		}
+		void Start () {
+			Time.timeScale = 0.1f;
+			beepSound = GetComponent<AudioSource>();
 
-		starttime = true;
+			three.enabled = true;
+			two.enabled = false;
+			one.enabled = false;
+			go.enabled = false;
 
-		if(starttime == true){
-			StartCoroutine ("CountDown");
+			timeLabel.enabled = false;
+
+			starttime = true;
+
+			if(starttime == true){
+				StartCoroutine ("CountDown");
+			}
+
+			
+		
+		}
+		
+		// Update is called once per frame
+		void Update () {
+			
+
+			var minutes = time / 60; 	//Divide the guiTime by sixty to get the minutes.
+
+			var seconds = time % 60;	//Use the euclidean division for the seconds.
+
+			var fraction = (time * 100) % 100; //Can add fraction if we want
+
+			//updates the HUD time text
+			if (raceStarted == true) {
+				time = time + Time.deltaTime;
+				timeLabel.enabled = true;
+				timeLabel.text = string.Format ("{0:00}:{1:00}:{2:00}", minutes, seconds, fraction);
+			}
+
+			//Add lap counter code here... still deciding how to implement this
 		}
 
-		
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-
-		var minutes = time / 60; 	//Divide the guiTime by sixty to get the minutes.
-
-		var seconds = time % 60;	//Use the euclidean division for the seconds.
-
-		var fraction = (time * 100) % 100; //Can add fraction if we want
-
-		//updates the HUD time text
-		if (raceStarted == true) {
-			time = time + Time.deltaTime;
-			timeLabel.enabled = true;
-			timeLabel.text = string.Format ("{0:00}:{1:00}:{2:00}", minutes, seconds, fraction);
+		IEnumerator CountDown(){
+			beepSound.Play ();
+			yield return new WaitForSeconds (0.09f);
+			beepSound.Play ();
+			three.enabled = false;
+			two.enabled = true;
+			yield return new WaitForSeconds (0.09f);
+			beepSound.Play ();
+			two.enabled = false;
+			one.enabled = true;
+			yield return new WaitForSeconds (0.09f);
+			one.enabled = false;
+			go.enabled = true;
+			yield return new WaitForSeconds (0.09f);
+			go.enabled = false;
+			raceStarted = true;
+			startTime ();
+		}
+		void startTime(){
+			Time.timeScale = 1.0f;
 		}
 
-		//Add lap counter code here... still deciding how to implement this
-	}
+		public void SetRacers(GameObject ob1, GameObject ob2, GameObject ob3) {
+			player = ob1;
+			ai1 = ob2;
+			ai2 = ob3;
+		}
 
-	IEnumerator CountDown(){
-		beepSound.Play ();
-		yield return new WaitForSeconds (0.09f);
-		beepSound.Play ();
-		three.enabled = false;
-		two.enabled = true;
-		yield return new WaitForSeconds (0.09f);
-		beepSound.Play ();
-		two.enabled = false;
-		one.enabled = true;
-		yield return new WaitForSeconds (0.09f);
-		one.enabled = false;
-		go.enabled = true;
-		yield return new WaitForSeconds (0.09f);
-		go.enabled = false;
-		raceStarted = true;
-		startTime ();
-	}
-	void startTime(){
-		Time.timeScale = 1.0f;
-	}
+		public void Lap(GameObject lapOb) {
+			if (lapOb == player) {
+				if (lap == 3) {
+					if (place == 1) {
 
+						SceneManager.LoadScene ("end_race");
+					} else {
+
+						SceneManager.LoadScene ("loose_race");
+					}
+				}
+				lap++;
+				lapText.text = lap + "/3";
+			}
+			
+		}
+
+	}
 }

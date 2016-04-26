@@ -37,7 +37,7 @@ namespace UnityStandardAssets.Vehicles.Car
 					otherScript.UpdateWaypoint (nextWaypoint);
 					if (isFinishLine) {
 						// Update GUI
-						//hud.GetComponent<HUD>().lap(other.gameObject);
+						hud.GetComponent<HUD>().Lap(other.gameObject);
 						print ("Lap, " + other.name);
 					}
 
