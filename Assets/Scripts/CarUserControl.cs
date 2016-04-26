@@ -17,7 +17,7 @@ namespace UnityStandardAssets.Vehicles.Car
         {
             // get the car controller
             m_Car = GetComponent<CarController>();
-			//pauseCanvas.enabled = false;
+
         }
 
 
